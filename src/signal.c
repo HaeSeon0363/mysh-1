@@ -2,10 +2,10 @@
 
 void catch_sigint(int)
 {
-  // TODO: File this!
+  signal(SIGINT, (void*)sig_handler);
 }
 
 void catch_sigtstp(int);
 {
-  // TODO: File this!
+  signal(SIGTSTP,(void*)sig_handler);
 }
